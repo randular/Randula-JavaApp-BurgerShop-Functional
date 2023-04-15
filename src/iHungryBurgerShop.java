@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class iHungryBurgerShop {
     public static void clearConsole() {
         try {
@@ -14,20 +16,21 @@ public class iHungryBurgerShop {
 
     }
 
+
+
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Scanner input = new Scanner(System.in);
         clearConsole();
-        System.out.println("------------------------------------------------------------------------------------------");
-        System.out.printf("%-30s%-60s%s", "|", "WELCOME TO TAX CALCULATOR SYSTEM", "|\n");
-        System.out.println("------------------------------------------------------------------------------------------");
-        System.out.printf("%10s%s", "", "[1] Withholding Tax\n");
-        System.out.printf("%10s%s", "", "[2] Payable Tax\n");
-        System.out.printf("%10s%s", "", "[3] Income Tax\n");
-        System.out.printf("%10s%s", "", "[4] Social Security Contribution Levy (SSCL) Tax\n");
-        System.out.printf("%10s%s", "", "[5] Leasing Payment\n");
-        System.out.printf("%10s%s", "", "[6] Exit Application\n");
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.printf("%-30s%-50s%s", "|", "iHungry Burger", "|\n");
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.printf("%-45s%s","[1] Add New Customer","[2] Place Order\n");
+        System.out.printf("%-45s%s","[3] Search Best Customer","[4] Search Order\n");
+        System.out.printf("%-45s%s","[5] Search Customer","[6] View Order\n");
+        System.out.printf("%-45s%s","[7] Update Order Details","[8] Exit\n");
         System.out.println();
         System.out.print("Enter and option to continue > ");
-        System.out.print("New Line ");
+        int optionValue = input.nextInt();
+        
     }
 }
