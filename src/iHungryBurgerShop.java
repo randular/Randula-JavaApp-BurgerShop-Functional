@@ -16,11 +16,14 @@ public class iHungryBurgerShop {
 
     }
 
+    public static int invalidInputCheck(int input, int minValue, int maxValue) {
+        
+        return input;
 
-
-    public static void main(String[] args) throws Exception {
+    }
+    
+    public static int mainWindow() {
         Scanner input = new Scanner(System.in);
-        clearConsole();
         System.out.println("---------------------------------------------------------------------------------");
         System.out.printf("%-30s%-50s%s", "|", "iHungry Burger", "|\n");
         System.out.println("---------------------------------------------------------------------------------");
@@ -30,7 +33,14 @@ public class iHungryBurgerShop {
         System.out.printf("%-45s%s","[7] Update Order Details","[8] Exit\n");
         System.out.println();
         System.out.print("Enter and option to continue > ");
-        int optionValue = input.nextInt();
+        return input.nextInt();
+    }
+
+    public static void main(String[] args) throws Exception {
+        clearConsole();
+        int x = mainWindow();
+        System.out.println(x);
+        
         
     }
 }
