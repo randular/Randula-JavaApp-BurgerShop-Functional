@@ -28,5 +28,6 @@ public class iHungryBurgerShop {
         System.out.printf("%10s%s", "", "[6] Exit Application\n");
         System.out.println();
         System.out.print("Enter and option to continue > ");
+        System.out.print("New Line ");
     }
 }
